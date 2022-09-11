@@ -1,0 +1,52 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(27,207,245);
+  background: linear-gradient(211deg, rgba(27,207,245,1) 0%, rgba(50,53,188,1) 100%, rgba(59,187,42,1) 100%, rgba(241,6,225,1) 100%, rgba(0,236,255,1) 100%);
+}
+
+.calculator-container {
+  display: grid;
+  background-color: rgba(31, 32, 34, 0.808);
+  width: 290px;
+  max-width: 90%;
+  min-height: 400px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 0px;
+  padding: 10px;
+  border-radius: 7px;
+ box-shadow: 2px 7px 26px -2px #000000;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.671);
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(17, 12, 46);
+}
+.box1 {
+  cursor: default;
+  grid-column: 1/5;
+  grid-row: 1/3;
+  background-color: rgb(41, 41, 51);
+  justify-content: right;
+  padding: 10px;
+}
+
+.box2 {
+  grid-column: 1/4;
+}
+
+.box18 {
+  grid-column: 3/5;
+}
